@@ -10,6 +10,7 @@ gem 'sass-rails', '~> 5.0'
 gem 'uglifier', '>= 1.3.0'
 gem 'bootsnap', '>= 1.1.0', require: false
 gem 'clearance'
+gem 'bootstrap-sass', '~> 3.4.1'
 
 gem 'nokogiri', '1.10.9'
 

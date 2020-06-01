@@ -1,0 +1,28 @@
+<h1>Meal Plans</h1>
+
+<% if @current_meal_plan.present? %>
+  <h2>Current Meal Plan</h2>
+  <div class="">
+    <ul class="meals">
+      <ul>
+        <% @current_meal_plan.meals.each do |m| %>
+          <li class="meal">
+            <%= m.date %> - <%= link_to m.recipe, recipe_path(m.recipe) %>
+          </li>
+          <% end %>
+      </ul>
+    </div>
+  </div>
+<% end %>
+
+<h3>All Meal Plans</h3>
+
+<% @meal_plans.each do |mp| %>
+  <div class="meal-plan">
+    <%= link_to mp, meal_plan_path(mp) %>
+  </div>
+<% end %>
+
+<div class="actions">
+  <%= link_to "New Meal Plan", new_meal_plan_path %>
+</div>

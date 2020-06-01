@@ -1,12 +1,4 @@
-<% if @errors.present? %>
-  <div class="errors">
-    <ul>
-      <% @errors.each do |e| %>
-        <li><%= e %></li>
-      <% end %>
-    </ul>
-  </div>
-<% end %>
+<%= render partial: "shared/errors" %>
 
 <%= form_for @recipe do |f| %>
   <div class="form_group">
