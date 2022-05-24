@@ -12,7 +12,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'clearance'
 gem 'bootstrap-sass', '~> 3.4.1'
 
-gem 'nokogiri', '1.10.9'
+gem 'nokogiri', '1.13.6'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
